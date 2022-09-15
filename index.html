@@ -30,10 +30,12 @@
         log in with your email or phone number.
       </p>
     </header>
-
-    <form id="login-form">
-      <input type="text" placeholder="Email or phone number" />
-      <input type="password" placeholder="Password" />
+    <!-- form에서 action은 어디다 정보를 보낼지, method는 보내는 방식이다.
+method는 post, get 두 가지가 있고 post는 비밀 정보를 백엔드 서버르 보낼 때,
+get은 url에 포함되어도 상관없는 정보들을 보낼 때이다.-->
+    <form id="login-form" action="friends.html" method="get">
+      <input name="username" type="text" placeholder="Email or phone number" />
+      <input name="password" type="password" placeholder="Password" />
       <input type="submit" value="Log In" />
       <a href="#">Find Kokoa Account or Password</a>
     </form>
