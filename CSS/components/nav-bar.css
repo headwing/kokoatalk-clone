@@ -4,6 +4,8 @@
   width: 100%;
   background-color: #f9f9fa;
   padding: 20px 50px;
+  /*box에 padding을 주면 width에 더하여 추가로 box를 padding만큼 늘리게 된다.
+  그것을 방지하기위해 box-sizing: border-box;을 써서 padding값과 상관없이 width를 유지하도록 한다.*/
   box-sizing: border-box;
   border-top: 1px solid rgba(121, 121, 121, 0.3);
 }
@@ -12,5 +14,20 @@
   justify-content: space-between;
 }
 .nav__link {
+  position: relative;
   color: #2e363e;
+}
+.nav__notification {
+  background-color: tomato;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
 }
