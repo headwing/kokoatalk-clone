@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to Kokoa Clone</title>
   </head>
@@ -11,37 +10,38 @@
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
-        <i class="fa-solid fa-wifi"></i>
+        <i class="fas fa-wifi"></i>
       </div>
       <div class="status-bar__column">
         <span>18:43</span>
       </div>
       <div class="status-bar__column">
         <span>110%</span>
-        <i class="fa-solid fa-battery-three-quarters fa-lg"></i>
-        <i class="fa-sharp fa-solid fa-bolt"></i>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
       </div>
     </div>
 
     <header class="welcome-header">
-      <h1 class="welcome-header__title">Welcome to KoKoa Clone</h1>
+      <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
       <p class="welcome-header__text">
-        If you have a Kokoa Account, <br />
-        log in with your email or phone number.
+        If you have a Kokoa Account, log in with your email or phone number.
       </p>
     </header>
-    <!-- form에서 action은 어디다 정보를 보낼지, method는 보내는 방식이다.
-method는 post, get 두 가지가 있고 post는 비밀 정보를 백엔드 서버르 보낼 때,
-get은 url에 포함되어도 상관없는 정보들을 보낼 때이다.-->
-    <form id="login-form" action="friends.html" method="get">
+
+    <form action="friends.html" method="get" id="login-form">
       <input name="username" type="text" placeholder="Email or phone number" />
       <input name="password" type="password" placeholder="Password" />
       <input type="submit" value="Log In" />
       <a href="#">Find Kokoa Account or Password</a>
     </form>
 
+    <div id="no-mobile">
+      <span>Your screen is too big ㅠㅠ</span>
+    </div>
+
     <script
-      src="https://kit.fontawesome.com/d5f9cba965.js"
+      src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"
     ></script>
   </body>
